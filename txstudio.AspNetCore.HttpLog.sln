@@ -7,6 +7,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpLog", "HttpLog\HttpLog.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpLogTest", "HttpLogTest\HttpLogTest.csproj", "{4554C02F-9C91-4D8B-B204-7E1C0F8CF14A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit-Test", "Unit-Test", "{07DBC679-82EA-405C-AC75-B5E7D7DA50F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration-Test", "Integration-Test", "{35FAAC4C-1EB5-43F1-A3A2-54CC3F0804FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpLogClient", "HttpLogClient\HttpLogClient.csproj", "{767FECC8-373B-42B9-8E92-63DA1C12ED59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpLogServer", "HttpLogServer\HttpLogServer.csproj", "{79B2D872-BBDA-499D-A724-D6EC7B2DC48D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpLogData", "HttpLogData\HttpLogData.csproj", "{ED22155B-1742-4229-AA4E-43572D97F374}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +31,27 @@ Global
 		{4554C02F-9C91-4D8B-B204-7E1C0F8CF14A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4554C02F-9C91-4D8B-B204-7E1C0F8CF14A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4554C02F-9C91-4D8B-B204-7E1C0F8CF14A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{767FECC8-373B-42B9-8E92-63DA1C12ED59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{767FECC8-373B-42B9-8E92-63DA1C12ED59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{767FECC8-373B-42B9-8E92-63DA1C12ED59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{767FECC8-373B-42B9-8E92-63DA1C12ED59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79B2D872-BBDA-499D-A724-D6EC7B2DC48D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79B2D872-BBDA-499D-A724-D6EC7B2DC48D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79B2D872-BBDA-499D-A724-D6EC7B2DC48D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79B2D872-BBDA-499D-A724-D6EC7B2DC48D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED22155B-1742-4229-AA4E-43572D97F374}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED22155B-1742-4229-AA4E-43572D97F374}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED22155B-1742-4229-AA4E-43572D97F374}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED22155B-1742-4229-AA4E-43572D97F374}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4554C02F-9C91-4D8B-B204-7E1C0F8CF14A} = {07DBC679-82EA-405C-AC75-B5E7D7DA50F9}
+		{767FECC8-373B-42B9-8E92-63DA1C12ED59} = {35FAAC4C-1EB5-43F1-A3A2-54CC3F0804FB}
+		{79B2D872-BBDA-499D-A724-D6EC7B2DC48D} = {35FAAC4C-1EB5-43F1-A3A2-54CC3F0804FB}
+		{ED22155B-1742-4229-AA4E-43572D97F374} = {35FAAC4C-1EB5-43F1-A3A2-54CC3F0804FB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {84380F26-8C68-45D5-B5D7-6EF134FC8161}
