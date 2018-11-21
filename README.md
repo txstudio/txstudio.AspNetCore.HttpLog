@@ -14,6 +14,8 @@
 
 * [[鐵人賽 Day03] ASP.NET Core 2 系列 - Middleware | John Wu's Blog](https://blog.johnwu.cc/article/ironman-day03-asp-net-core-middleware.html)
 
+* [Using Middleware to Log Requests and Responses in ASP.NET Core](https://exceptionnotfound.net/using-middleware-to-log-requests-and-responses-in-asp-net-core/)
+
 ### 進行 Middleware 測試
 
 * [» ASP.NET Core 2.1 middlewares part 2: Unit test a custom middleware](http://anthonygiretti.com/2018/09/04/asp-net-core-2-1-middlewares-part2-unit-test-a-custom-middleware/)
