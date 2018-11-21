@@ -4,7 +4,9 @@
 
 ## 如何使用
 
+實作 IHttpLogStore 介面定義 HttpLog 事件需要儲存的位置與內容
 
+在 Startup 類別中的 Configure 方法加入 app.UseHttpLog 呼叫，並帶入 IHttpLogStore 實作類別 (選擇項目)
 
 ## 參考連結
 
