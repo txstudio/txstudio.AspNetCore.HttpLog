@@ -23,7 +23,7 @@ namespace HttpLogTest
         }
 
         [Fact]
-        public async Task ContentTypeIsMultipartFormDataReturnNullRequestBody()
+        public async Task Can_Get_Null_RequestBody_When_ContentType_Is_MultipartFormData()
         {
             var _httpContextMock = await this.GetHttpContextMock();
             var _httpLogStoreMock = await GetHttpLogStoreMock((log) => _httpLog = log);
@@ -38,7 +38,7 @@ namespace HttpLogTest
         }
 
         [Fact]
-        public async Task ConnectionInfoPropertiesTest()
+        public async Task Can_Get_ConnectionInfo_Properties()
         {
             //HttpContext
             var _httpContextMock = await this.GetHttpContextMock();
@@ -53,7 +53,7 @@ namespace HttpLogTest
         }
 
         [Fact]
-        public async Task IdentityPropertiesTest()
+        public async Task Can_Get_Identity_Properties()
         {
             var _httpContextMock = await this.GetHttpContextMock();
             var _httpLogStoreMock = await this.GetHttpLogStoreMock((log) => _httpLog = log);
@@ -65,7 +65,7 @@ namespace HttpLogTest
         }
 
         [Fact]
-        public async Task HttpRequestPropertiesTest()
+        public async Task Can_Get_HttpRequest_Properties()
         {
             var _httpContextMock = await this.GetHttpContextMock();
             var _httpLogStoreMock = await this.GetHttpLogStoreMock((log) => _httpLog = log);
@@ -84,7 +84,7 @@ namespace HttpLogTest
         }
 
         [Fact]
-        public async Task HttpResponsePropertiesTest()
+        public async Task Can_Get_HttpResponse_Properties()
         {
             var _httpContextMock = await this.GetHttpContextMock();
             var _httpLogStoreMock = await this.GetHttpLogStoreMock((log) => _httpLog = log);
