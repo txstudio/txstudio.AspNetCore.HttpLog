@@ -66,10 +66,17 @@ namespace HttpLogExtensions
                     return;
 
                 //ConnectionInfo
-                log.LocalIpAddress = _connection.LocalIpAddress.ToString();
-                log.LocalPort = _connection.LocalPort;
-                log.RemoteIpAddress = _connection.RemoteIpAddress.ToString();
-                log.RemotePort = _connection.RemotePort;
+                if(_connection.LocalIpAddress != null)
+                    log.LocalIpAddress = _connection.LocalIpAddress.ToString();
+
+                if(_connection.LocalPort != 0)
+                    log.LocalPort = _connection.LocalPort;
+
+                if(_connection.RemoteIpAddress != null)
+                    log.RemoteIpAddress = _connection.RemoteIpAddress.ToString();
+
+                if(_connection.RemotePort != 0)
+                    log.RemotePort = _connection.RemotePort;
             });
         }
 
