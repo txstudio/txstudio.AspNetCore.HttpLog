@@ -85,5 +85,17 @@ namespace HttpLogTest
             await _middleware.Invoke(httpContextMock.Object);
         }
 
+        private async Task InvokeMiddlewareUseDefaultHttpContext(Mock<IHttpLogStore> httpLogStoreMock)
+        {
+            var _context = new DefaultHttpContext();
+
+            var _middleware
+                = new HttpLogMiddleware(next: async (context) => {
+                    await context.Response.WriteAsync(@"{""Result"":""true""}");
+                }, logStore: httpLogStoreMock.Object);
+
+            await _middleware.Invoke(_context);
+        }
+
     }
 }

@@ -94,7 +94,16 @@ namespace HttpLogTest
             Assert.Equal(200, _httpLog.ResponseStatusCode);
             Assert.Equal("text/xml", _httpLog.ResponseContentType);
             Assert.Equal(10, _httpLog.ResponseContentLength);
-            //Assert.Equal(@"{""Result"":""true""}", _httpLog.ResponseBody);
+        }
+
+        [Fact]
+        public async Task Can_Get_HttpResponse_Body()
+        {
+            var _httpLogStoreMock = await this.GetHttpLogStoreMock((log) => _httpLog = log);
+
+            await this.InvokeMiddlewareUseDefaultHttpContext(_httpLogStoreMock);
+
+            Assert.Equal(@"{""Result"":""true""}", _httpLog.ResponseBody);
         }
     }
 }
