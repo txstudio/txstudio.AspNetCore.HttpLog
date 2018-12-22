@@ -8,6 +8,12 @@
 
 在 Startup 類別中的 Configure 方法加入 app.UseHttpLog 呼叫，並帶入 IHttpLogStore 實作類別 (選擇項目)
 
+## 開發與使用備註
+
+- Request 的 Content-Type 為 multipart/form-data 時，不會取得 ReqestBody 內文
+- 要指定特定 URL 不進行存取時，請在 IHttpLogStore 實作類別進行加工
+- 要設定僅擷取指定 Content-Type (例：application/json 的請求才需要紀錄) 也請在 IHttpLogStore 實作類別進行加工
+
 ## 參考連結
 
 ### Middleware 物件開發參考
